@@ -82,4 +82,19 @@ public class Node<V> {
     {
         this.prev = node;
     }
+
+    public V getValue()
+    {
+        return value;
+    }
+
+    public String toString()
+    {
+        String result = "Value(" + value + ")--->";
+        if (null != next)
+        {
+            result += next.toString();
+        }
+        return result;
+    }
 }

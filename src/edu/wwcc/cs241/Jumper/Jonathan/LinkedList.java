@@ -124,4 +124,9 @@ public class LinkedList<V> {
     {
         this.node = node;
     }
+
+    public String toString()
+    {
+        return node.toString();
+    }
 }
