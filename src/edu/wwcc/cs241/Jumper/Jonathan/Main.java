@@ -1,5 +1,7 @@
 package edu.wwcc.cs241.Jumper.Jonathan;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args)
     {
@@ -40,8 +42,7 @@ public class Main {
         System.out.println("* REMOVE AT INDEX 0 *");
         //ll.removeAt(0);
         System.out.print(ll);
-        System.out.println("\nLinkedList length = " + ll.length());
-        System.out.println("\nLinkedList length = " + ll.length());
+
         //ll.print();
         System.out.print(ll);
         System.out.println("\nLinkedList length = " + ll.length());
@@ -59,6 +60,35 @@ public class Main {
         //ll.print();
         System.out.print(ll);
         System.out.println("\nLinkedList length = " + ll.length());
+        //******RANDOM!!!*****
+
+
+        /*
+         * Random for insertAt() method
+         */
+        System.out.println("\n* STARTING RANDOM INSERT AT INDEX *\n");
+        /*
+         * Stub for future randomizer method
+         */
+        //ll.insertRandomizer();
+        Random r = new Random();
+        for (int i = 0; i < 5; i++)
+        {
+            //ll.print();
+            System.out.println("\nLinkedList length = " + ll.length());
+            //System.out.println("\nLinkedList length = " + ll.length());
+            // System.out.println("LinkedList length = " + ll.length() + "\n");
+            int value = r.nextInt(10);
+            int position = r.nextInt(6);
+            System.out.println("Inserting value: " + "*" + value + "*" + " at index: " + position);
+            /*
+             * Calling insertAt() method
+             */
+            // ll.append(value, position);
+            //ll.append(value, position);
+        }
+        System.out.println("Final LinkedList length = " + ll.length());
+
 
     }
 }
