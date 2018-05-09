@@ -84,7 +84,7 @@ public class Main {
             /*
              * Calling insertAt() method
              */
-            // ll.append(value, position);
+            ll.insertAt(value, position);
             //ll.append(value, position);
         }
         System.out.println("Final LinkedList length = " + ll.length());
